@@ -1,6 +1,6 @@
 # 🎮 Cuadro Comparativo Interactivo – Lenguaje Ensamblador
 
-![UAS Logo]
+
 ![UAS](Imagenes/uas.png)
 
 ---
