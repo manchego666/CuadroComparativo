@@ -13,4 +13,4 @@ Aquí se guardan las capturas de pantalla y recursos gráficos del proyecto **Cu
 Las imágenes se referencian en el archivo raíz `README.md` con rutas relativas o en otros lugares:
 
 ```markdown
-![Juego](imagenes/juego.png)
+![Juego](Imagenes/juego.png)
