@@ -1,7 +1,7 @@
 # 🎮 Cuadro Comparativo Interactivo – Lenguaje Ensamblador
 
-![UAS Logo](https://www.uas.edu.mx/images/uas.png)  
-*Facultad de Ingeniería Mochis – UAS Virtual 2025*
+![UAS Logo]
+![UAS](imagenes/uas.png)
 
 ---
 
@@ -58,13 +58,14 @@ El cuadro comparativo incluye:
 
 ## 📸 Capturas de pantalla
 ### Menú de inicio
-*(ejemplo  Form1 con botones Jugar / Salir)*  
+![Menú de inicio](imagenes/inicio.png)
 
 ### Juego activo
-*(el cuadro comparativo con ComboBox para responder)*  
+![Juego activo](imagenes/juego.png)
 
 ### Pantalla Ganaste / Perdiste
-*(con memes académicos estilo gamer)*  
+![Ganaste](imagenes/ganaste.png)
+![Perdiste](imagenes/perdiste.png)
 
 ---
 
