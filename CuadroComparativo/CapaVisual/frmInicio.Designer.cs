@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             pictureBox1 = new PictureBox();
             btnJugar = new Button();
             btnSalir = new Button();
@@ -36,16 +37,19 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.BackgroundImage = Properties.Resources.ChatGPT_Image_7_sept_2025__07_53_35_p_m_;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1322, 929);
+            pictureBox1.Size = new Size(1321, 926);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // btnJugar
             // 
+            btnJugar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnJugar.BackColor = Color.FromArgb(0, 0, 64);
             btnJugar.FlatStyle = FlatStyle.Popup;
             btnJugar.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -60,6 +64,7 @@
             // 
             // btnSalir
             // 
+            btnSalir.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnSalir.BackColor = Color.FromArgb(0, 0, 64);
             btnSalir.FlatStyle = FlatStyle.Popup;
             btnSalir.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -80,8 +85,11 @@
             Controls.Add(btnSalir);
             Controls.Add(btnJugar);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmInicio";
-            Text = "Form1";
+            Text = "CUADRO COMPARATIVO - ZDEV - UAS 2025";
+            WindowState = FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }

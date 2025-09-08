@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmJuego));
             tableLayoutPanel1 = new TableLayoutPanel();
             panel20 = new Panel();
             cbR1032 = new ComboBox();
@@ -86,7 +87,6 @@
             panel2 = new Panel();
             cbR964 = new ComboBox();
             lblR964 = new Label();
-            label3 = new Label();
             lblArquitectura64 = new Label();
             lblArquitectura32 = new Label();
             lblCaracteristicas = new Label();
@@ -102,9 +102,11 @@
             panel1 = new Panel();
             cbR864 = new ComboBox();
             lblR864 = new Label();
+            label3 = new Label();
             pictureBox1 = new PictureBox();
             btnSalir = new Button();
             btnComprobar = new Button();
+            panelRight = new Panel();
             tableLayoutPanel1.SuspendLayout();
             panel20.SuspendLayout();
             panel19.SuspendLayout();
@@ -127,14 +129,15 @@
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panelRight.SuspendLayout();
             SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             tableLayoutPanel1.ColumnCount = 3;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 414F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 24.15304F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 37.92348F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 37.92348F));
             tableLayoutPanel1.Controls.Add(panel20, 1, 10);
             tableLayoutPanel1.Controls.Add(panel19, 1, 9);
             tableLayoutPanel1.Controls.Add(panel18, 1, 8);
@@ -154,7 +157,6 @@
             tableLayoutPanel1.Controls.Add(panel4, 2, 7);
             tableLayoutPanel1.Controls.Add(panel3, 2, 10);
             tableLayoutPanel1.Controls.Add(panel2, 2, 9);
-            tableLayoutPanel1.Controls.Add(label3, 0, 1);
             tableLayoutPanel1.Controls.Add(lblArquitectura64, 2, 0);
             tableLayoutPanel1.Controls.Add(lblArquitectura32, 1, 0);
             tableLayoutPanel1.Controls.Add(lblCaracteristicas, 0, 0);
@@ -168,22 +170,25 @@
             tableLayoutPanel1.Controls.Add(label11, 0, 9);
             tableLayoutPanel1.Controls.Add(label12, 0, 10);
             tableLayoutPanel1.Controls.Add(panel1, 2, 8);
+            tableLayoutPanel1.Controls.Add(label3, 0, 1);
+            tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tableLayoutPanel1.GrowStyle = TableLayoutPanelGrowStyle.FixedSize;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 11;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 30.2325573F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 69.76744F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 171F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 169F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 179F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 160F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 151F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 154F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 149F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 170F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 177F));
-            tableLayoutPanel1.Size = new Size(1464, 1697);
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 59F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10.5263166F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10.5263166F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10.5263166F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10.5263166F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10.5263166F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10.5263166F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10.5263166F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10.5263166F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10.5263166F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 5.26315832F));
+            tableLayoutPanel1.Size = new Size(2017, 1700);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // panel20
@@ -191,20 +196,19 @@
             panel20.Controls.Add(cbR1032);
             panel20.Controls.Add(lblR1032);
             panel20.Dock = DockStyle.Fill;
-            panel20.Location = new Point(528, 1522);
+            panel20.Location = new Point(490, 1610);
             panel20.Name = "panel20";
-            panel20.Size = new Size(519, 172);
+            panel20.Size = new Size(758, 87);
             panel20.TabIndex = 52;
             // 
             // cbR1032
             // 
-            cbR1032.Dock = DockStyle.Bottom;
             cbR1032.DropDownStyle = ComboBoxStyle.DropDownList;
             cbR1032.FormattingEnabled = true;
             cbR1032.Items.AddRange(new object[] { "BANDA ANCHA INFINITA", "Es cuantica y de von neumann", "Límite 4 GB; segmentación compleja", "so in cloud free" });
-            cbR1032.Location = new Point(0, 132);
+            cbR1032.Location = new Point(3, 50);
             cbR1032.Name = "cbR1032";
-            cbR1032.Size = new Size(519, 40);
+            cbR1032.Size = new Size(543, 40);
             cbR1032.Sorted = true;
             cbR1032.TabIndex = 2;
             cbR1032.Tag = "Límite 4 GB; segmentación compleja";
@@ -226,20 +230,19 @@
             panel19.Controls.Add(cbR932);
             panel19.Controls.Add(lblR932);
             panel19.Dock = DockStyle.Fill;
-            panel19.Location = new Point(528, 1352);
+            panel19.Location = new Point(490, 1438);
             panel19.Name = "panel19";
-            panel19.Size = new Size(519, 164);
+            panel19.Size = new Size(758, 166);
             panel19.TabIndex = 51;
             // 
             // cbR932
             // 
-            cbR932.Dock = DockStyle.Bottom;
             cbR932.DropDownStyle = ComboBoxStyle.DropDownList;
             cbR932.FormattingEnabled = true;
             cbR932.Items.AddRange(new object[] { "hay mas queues y las pilas son eternas", "Java es gratis", "Multitarea y memoria protegida", "ninguna es mala" });
             cbR932.Location = new Point(0, 124);
             cbR932.Name = "cbR932";
-            cbR932.Size = new Size(519, 40);
+            cbR932.Size = new Size(546, 40);
             cbR932.Sorted = true;
             cbR932.TabIndex = 2;
             cbR932.Tag = "Multitarea y memoria protegida";
@@ -261,20 +264,19 @@
             panel18.Controls.Add(cbR832);
             panel18.Controls.Add(lblR832);
             panel18.Dock = DockStyle.Fill;
-            panel18.Location = new Point(528, 1203);
+            panel18.Location = new Point(490, 1266);
             panel18.Name = "panel18";
-            panel18.Size = new Size(519, 143);
+            panel18.Size = new Size(758, 166);
             panel18.TabIndex = 50;
             // 
             // cbR832
             // 
-            cbR832.Dock = DockStyle.Bottom;
             cbR832.DropDownStyle = ComboBoxStyle.DropDownList;
             cbR832.FormattingEnabled = true;
             cbR832.Items.AddRange(new object[] { "Punto de venta", "Sistema automatizado de control academico", "Windows 95/98, Windows XP 32, Linux inicial", "XBOX y PLAY5" });
-            cbR832.Location = new Point(0, 103);
+            cbR832.Location = new Point(0, 126);
             cbR832.Name = "cbR832";
-            cbR832.Size = new Size(519, 40);
+            cbR832.Size = new Size(546, 40);
             cbR832.Sorted = true;
             cbR832.TabIndex = 2;
             cbR832.Tag = "Windows 95/98, Windows XP 32, Linux inicial";
@@ -296,20 +298,19 @@
             panel17.Controls.Add(cbR732);
             panel17.Controls.Add(lblR732);
             panel17.Dock = DockStyle.Fill;
-            panel17.Location = new Point(528, 1049);
+            panel17.Location = new Point(490, 1094);
             panel17.Name = "panel17";
-            panel17.Size = new Size(519, 148);
+            panel17.Size = new Size(758, 166);
             panel17.TabIndex = 49;
             // 
             // cbR732
             // 
-            cbR732.Dock = DockStyle.Bottom;
             cbR732.DropDownStyle = ComboBoxStyle.DropDownList;
             cbR732.FormattingEnabled = true;
             cbR732.Items.AddRange(new object[] { "C", "C++", "Compatibilidad 8086; enteros 32 bits", "NASM o MASM", "x+y" });
-            cbR732.Location = new Point(0, 108);
+            cbR732.Location = new Point(0, 121);
             cbR732.Name = "cbR732";
-            cbR732.Size = new Size(519, 40);
+            cbR732.Size = new Size(546, 40);
             cbR732.Sorted = true;
             cbR732.TabIndex = 2;
             cbR732.Tag = "Compatibilidad 8086; enteros 32 bits";
@@ -331,20 +332,19 @@
             panel16.Controls.Add(cbR632);
             panel16.Controls.Add(lblR632);
             panel16.Dock = DockStyle.Fill;
-            panel16.Location = new Point(528, 898);
+            panel16.Location = new Point(490, 922);
             panel16.Name = "panel16";
-            panel16.Size = new Size(519, 145);
+            panel16.Size = new Size(758, 166);
             panel16.TabIndex = 48;
             // 
             // cbR632
             // 
-            cbR632.Dock = DockStyle.Bottom;
             cbR632.DropDownStyle = ComboBoxStyle.DropDownList;
             cbR632.FormattingEnabled = true;
             cbR632.Items.AddRange(new object[] { "4 GB", "LINQ =>", "LAMBDA INSERT WHERE", "SQLITE", "NTFS" });
-            cbR632.Location = new Point(0, 105);
+            cbR632.Location = new Point(0, 123);
             cbR632.Name = "cbR632";
-            cbR632.Size = new Size(519, 40);
+            cbR632.Size = new Size(546, 40);
             cbR632.TabIndex = 2;
             cbR632.Tag = "4 GB";
             // 
@@ -365,20 +365,19 @@
             panel15.Controls.Add(cbR532);
             panel15.Controls.Add(lblR532);
             panel15.Dock = DockStyle.Fill;
-            panel15.Location = new Point(528, 738);
+            panel15.Location = new Point(490, 750);
             panel15.Name = "panel15";
-            panel15.Size = new Size(519, 154);
+            panel15.Size = new Size(758, 166);
             panel15.TabIndex = 47;
             // 
             // cbR532
             // 
-            cbR532.Dock = DockStyle.Bottom;
             cbR532.DropDownStyle = ComboBoxStyle.DropDownList;
             cbR532.FormattingEnabled = true;
             cbR532.Items.AddRange(new object[] { "interfaces", "Modo protegido (Ring 0–3)", "tablas relacionales" });
-            cbR532.Location = new Point(0, 114);
+            cbR532.Location = new Point(0, 121);
             cbR532.Name = "cbR532";
-            cbR532.Size = new Size(519, 40);
+            cbR532.Size = new Size(546, 40);
             cbR532.Sorted = true;
             cbR532.TabIndex = 2;
             cbR532.Tag = "Modo protegido (Ring 0–3)";
@@ -400,20 +399,19 @@
             panel14.Controls.Add(cbR432);
             panel14.Controls.Add(lblR432);
             panel14.Dock = DockStyle.Fill;
-            panel14.Location = new Point(528, 559);
+            panel14.Location = new Point(490, 578);
             panel14.Name = "panel14";
-            panel14.Size = new Size(519, 173);
+            panel14.Size = new Size(758, 166);
             panel14.TabIndex = 46;
             // 
             // cbR432
             // 
-            cbR432.Dock = DockStyle.Bottom;
             cbR432.DropDownStyle = ComboBoxStyle.DropDownList;
             cbR432.FormattingEnabled = true;
             cbR432.Items.AddRange(new object[] { "bajo demanda", "CS, DS, ES, SS, FS, GS (segmentación completa)", "encapsulamiento" });
             cbR432.Location = new Point(0, 133);
             cbR432.Name = "cbR432";
-            cbR432.Size = new Size(519, 40);
+            cbR432.Size = new Size(546, 40);
             cbR432.Sorted = true;
             cbR432.TabIndex = 2;
             cbR432.Tag = "CS, DS, ES, SS, FS, GS (segmentación completa)";
@@ -435,20 +433,19 @@
             panel13.Controls.Add(cbR332);
             panel13.Controls.Add(lblR332);
             panel13.Dock = DockStyle.Fill;
-            panel13.Location = new Point(528, 390);
+            panel13.Location = new Point(490, 406);
             panel13.Name = "panel13";
-            panel13.Size = new Size(519, 163);
+            panel13.Size = new Size(758, 166);
             panel13.TabIndex = 45;
             // 
             // cbR332
             // 
-            cbR332.Dock = DockStyle.Bottom;
             cbR332.DropDownStyle = ComboBoxStyle.DropDownList;
             cbR332.FormattingEnabled = true;
             cbR332.Items.AddRange(new object[] { "BUFFERS", "EFLAGS (32 bits). ", "MODELO OSI", "ZFLAGS(128qbits)." });
             cbR332.Location = new Point(0, 123);
             cbR332.Name = "cbR332";
-            cbR332.Size = new Size(519, 40);
+            cbR332.Size = new Size(546, 40);
             cbR332.Sorted = true;
             cbR332.TabIndex = 2;
             cbR332.Tag = "EFLAGS (32 bits). ";
@@ -470,20 +467,19 @@
             panel12.Controls.Add(cbR232);
             panel12.Controls.Add(lblR232);
             panel12.Dock = DockStyle.Fill;
-            panel12.Location = new Point(528, 219);
+            panel12.Location = new Point(490, 234);
             panel12.Name = "panel12";
-            panel12.Size = new Size(519, 165);
+            panel12.Size = new Size(758, 166);
             panel12.TabIndex = 44;
             // 
             // cbR232
             // 
-            cbR232.Dock = DockStyle.Bottom;
             cbR232.DropDownStyle = ComboBoxStyle.DropDownList;
             cbR232.FormattingEnabled = true;
             cbR232.Items.AddRange(new object[] { "AX,BX,CX,DX,RTX NVIDIA", "ESI, EDI, EBP, ESP, EIP", "La cpu", "von neumann" });
             cbR232.Location = new Point(0, 125);
             cbR232.Name = "cbR232";
-            cbR232.Size = new Size(519, 40);
+            cbR232.Size = new Size(546, 40);
             cbR232.Sorted = true;
             cbR232.TabIndex = 2;
             cbR232.Tag = "ESI, EDI, EBP, ESP, EIP";
@@ -505,20 +501,19 @@
             panel11.Controls.Add(cbR132);
             panel11.Controls.Add(lblR132);
             panel11.Dock = DockStyle.Fill;
-            panel11.Location = new Point(528, 68);
+            panel11.Location = new Point(490, 62);
             panel11.Name = "panel11";
-            panel11.Size = new Size(519, 145);
+            panel11.Size = new Size(758, 166);
             panel11.TabIndex = 43;
             // 
             // cbR132
             // 
-            cbR132.Dock = DockStyle.Bottom;
             cbR132.DropDownStyle = ComboBoxStyle.DropDownList;
             cbR132.FormattingEnabled = true;
             cbR132.Items.AddRange(new object[] { "EAX,EBX,CX,EDX", "EAX,EBX,ECX,EDX", "los discos magneticos", "memoria ram" });
-            cbR132.Location = new Point(0, 105);
+            cbR132.Location = new Point(0, 125);
             cbR132.Name = "cbR132";
-            cbR132.Size = new Size(519, 40);
+            cbR132.Size = new Size(546, 40);
             cbR132.Sorted = true;
             cbR132.TabIndex = 2;
             cbR132.Tag = "EAX,EBX,ECX,EDX";
@@ -540,20 +535,19 @@
             panel10.Controls.Add(cbR164);
             panel10.Controls.Add(lblR164);
             panel10.Dock = DockStyle.Fill;
-            panel10.Location = new Point(1053, 68);
+            panel10.Location = new Point(1254, 62);
             panel10.Name = "panel10";
-            panel10.Size = new Size(408, 145);
+            panel10.Size = new Size(760, 166);
             panel10.TabIndex = 42;
             // 
             // cbR164
             // 
-            cbR164.Dock = DockStyle.Bottom;
             cbR164.DropDownStyle = ComboBoxStyle.DropDownList;
             cbR164.FormattingEnabled = true;
             cbR164.Items.AddRange(new object[] { "EAX,EBX,ECX,EDX", "el gpu", "http", "RAX, RBX, RCX, RDX" });
-            cbR164.Location = new Point(0, 105);
+            cbR164.Location = new Point(0, 126);
             cbR164.Name = "cbR164";
-            cbR164.Size = new Size(408, 40);
+            cbR164.Size = new Size(547, 40);
             cbR164.Sorted = true;
             cbR164.TabIndex = 2;
             cbR164.Tag = "RAX, RBX, RCX, RDX";
@@ -575,19 +569,18 @@
             panel9.Controls.Add(cbR264);
             panel9.Controls.Add(lblR264);
             panel9.Dock = DockStyle.Fill;
-            panel9.Location = new Point(1053, 219);
+            panel9.Location = new Point(1254, 234);
             panel9.Name = "panel9";
-            panel9.Size = new Size(408, 165);
+            panel9.Size = new Size(760, 166);
             panel9.TabIndex = 41;
             // 
             // cbR264
             // 
-            cbR264.Dock = DockStyle.Bottom;
             cbR264.FormattingEnabled = true;
             cbR264.Items.AddRange(new object[] { "ESI, EDI, EBP, ESP, EIP", "I5", "RSI, RDI, RBP, RSP, RIP + R8–R15", "Rueda de leibniz" });
-            cbR264.Location = new Point(0, 125);
+            cbR264.Location = new Point(0, 126);
             cbR264.Name = "cbR264";
-            cbR264.Size = new Size(408, 40);
+            cbR264.Size = new Size(547, 40);
             cbR264.Sorted = true;
             cbR264.TabIndex = 2;
             cbR264.Tag = "RSI, RDI, RBP, RSP, RIP + R8–R15";
@@ -609,20 +602,19 @@
             panel8.Controls.Add(cbR364);
             panel8.Controls.Add(lblR364);
             panel8.Dock = DockStyle.Fill;
-            panel8.Location = new Point(1053, 390);
+            panel8.Location = new Point(1254, 406);
             panel8.Name = "panel8";
-            panel8.Size = new Size(408, 163);
+            panel8.Size = new Size(760, 166);
             panel8.TabIndex = 40;
             // 
             // cbR364
             // 
-            cbR364.Dock = DockStyle.Bottom;
             cbR364.DropDownStyle = ComboBoxStyle.DropDownList;
             cbR364.FormattingEnabled = true;
             cbR364.Items.AddRange(new object[] { "E/S", "RFLAGS (64 bits)", "SSD", "ZFLAGS(128 bits)" });
-            cbR364.Location = new Point(0, 123);
+            cbR364.Location = new Point(0, 126);
             cbR364.Name = "cbR364";
-            cbR364.Size = new Size(408, 40);
+            cbR364.Size = new Size(547, 40);
             cbR364.Sorted = true;
             cbR364.TabIndex = 2;
             cbR364.Tag = "RFLAGS (64 bits)";
@@ -644,20 +636,19 @@
             panel7.Controls.Add(cbR464);
             panel7.Controls.Add(lblR464);
             panel7.Dock = DockStyle.Fill;
-            panel7.Location = new Point(1053, 559);
+            panel7.Location = new Point(1254, 578);
             panel7.Name = "panel7";
-            panel7.Size = new Size(408, 173);
+            panel7.Size = new Size(760, 166);
             panel7.TabIndex = 39;
             // 
             // cbR464
             // 
-            cbR464.Dock = DockStyle.Bottom;
             cbR464.DropDownStyle = ComboBoxStyle.DropDownList;
             cbR464.FormattingEnabled = true;
             cbR464.Items.AddRange(new object[] { "Hebras + planificador Roundrobin", "particionamiento", "Segmentación reducida; paginación" });
-            cbR464.Location = new Point(0, 133);
+            cbR464.Location = new Point(0, 126);
             cbR464.Name = "cbR464";
-            cbR464.Size = new Size(408, 40);
+            cbR464.Size = new Size(547, 40);
             cbR464.Sorted = true;
             cbR464.TabIndex = 2;
             cbR464.Tag = "Segmentación reducida; paginación";
@@ -679,20 +670,19 @@
             panel6.Controls.Add(cbR564);
             panel6.Controls.Add(lblR564);
             panel6.Dock = DockStyle.Fill;
-            panel6.Location = new Point(1053, 738);
+            panel6.Location = new Point(1254, 750);
             panel6.Name = "panel6";
-            panel6.Size = new Size(408, 154);
+            panel6.Size = new Size(760, 166);
             panel6.TabIndex = 38;
             // 
             // cbR564
             // 
-            cbR564.Dock = DockStyle.Bottom;
             cbR564.DropDownStyle = ComboBoxStyle.DropDownList;
             cbR564.FormattingEnabled = true;
             cbR564.Items.AddRange(new object[] { "Abstraccion", "joins", "Modo largo (Long Mode)", "Polimorfismo" });
-            cbR564.Location = new Point(0, 114);
+            cbR564.Location = new Point(0, 126);
             cbR564.Name = "cbR564";
-            cbR564.Size = new Size(408, 40);
+            cbR564.Size = new Size(547, 40);
             cbR564.Sorted = true;
             cbR564.TabIndex = 2;
             cbR564.Tag = "Modo largo (Long Mode)";
@@ -714,20 +704,19 @@
             panel5.Controls.Add(cbR664);
             panel5.Controls.Add(lblR664);
             panel5.Dock = DockStyle.Fill;
-            panel5.Location = new Point(1053, 898);
+            panel5.Location = new Point(1254, 922);
             panel5.Name = "panel5";
-            panel5.Size = new Size(408, 145);
+            panel5.Size = new Size(760, 166);
             panel5.TabIndex = 37;
             // 
             // cbR664
             // 
-            cbR664.Dock = DockStyle.Bottom;
             cbR664.DropDownStyle = ComboBoxStyle.DropDownList;
             cbR664.FormattingEnabled = true;
             cbR664.Items.AddRange(new object[] { "16 EB teóricos (48 bits efectivos ≈ 256 TB)", "Coleccion", "JSON", "pascal" });
-            cbR664.Location = new Point(0, 105);
+            cbR664.Location = new Point(0, 126);
             cbR664.Name = "cbR664";
-            cbR664.Size = new Size(408, 40);
+            cbR664.Size = new Size(547, 40);
             cbR664.Sorted = true;
             cbR664.TabIndex = 2;
             cbR664.Tag = "16 EB teóricos (48 bits efectivos ≈ 256 TB)";
@@ -749,20 +738,19 @@
             panel4.Controls.Add(cbR764);
             panel4.Controls.Add(lblR764);
             panel4.Dock = DockStyle.Fill;
-            panel4.Location = new Point(1053, 1049);
+            panel4.Location = new Point(1254, 1094);
             panel4.Name = "panel4";
-            panel4.Size = new Size(408, 148);
+            panel4.Size = new Size(760, 166);
             panel4.TabIndex = 36;
             // 
             // cbR764
             // 
-            cbR764.Dock = DockStyle.Bottom;
             cbR764.DropDownStyle = ComboBoxStyle.DropDownList;
             cbR764.FormattingEnabled = true;
             cbR764.Items.AddRange(new object[] { "ARDUINO", "Compatibilidad hacia atrás + instrucciones 64-bit (SSE/AVX/…)", "Microprogramación", "nivel logico o dispositivo", "nunca jamas en la vida" });
-            cbR764.Location = new Point(0, 108);
+            cbR764.Location = new Point(0, 126);
             cbR764.Name = "cbR764";
-            cbR764.Size = new Size(408, 40);
+            cbR764.Size = new Size(547, 40);
             cbR764.Sorted = true;
             cbR764.TabIndex = 2;
             cbR764.Tag = "Compatibilidad hacia atrás + instrucciones 64-bit (SSE/AVX/…)";
@@ -784,20 +772,19 @@
             panel3.Controls.Add(cbR1064);
             panel3.Controls.Add(lblR1064);
             panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(1053, 1522);
+            panel3.Location = new Point(1254, 1610);
             panel3.Name = "panel3";
-            panel3.Size = new Size(408, 172);
+            panel3.Size = new Size(760, 87);
             panel3.TabIndex = 35;
             // 
             // cbR1064
             // 
-            cbR1064.Dock = DockStyle.Bottom;
             cbR1064.DropDownStyle = ComboBoxStyle.DropDownList;
             cbR1064.FormattingEnabled = true;
             cbR1064.Items.AddRange(new object[] { "la venden en china a 5 dolares", "no hice la tarea", "Punteros grandes; requiere HW/SW de 64 bits", "Tiene panel solar gratis con gpu ati" });
-            cbR1064.Location = new Point(0, 132);
+            cbR1064.Location = new Point(0, 47);
             cbR1064.Name = "cbR1064";
-            cbR1064.Size = new Size(408, 40);
+            cbR1064.Size = new Size(547, 40);
             cbR1064.Sorted = true;
             cbR1064.TabIndex = 2;
             cbR1064.Tag = "Punteros grandes; requiere HW/SW de 64 bits";
@@ -819,20 +806,19 @@
             panel2.Controls.Add(cbR964);
             panel2.Controls.Add(lblR964);
             panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(1053, 1352);
+            panel2.Location = new Point(1254, 1438);
             panel2.Name = "panel2";
-            panel2.Size = new Size(408, 164);
+            panel2.Size = new Size(760, 166);
             panel2.TabIndex = 34;
             // 
             // cbR964
             // 
-            cbR964.Dock = DockStyle.Bottom;
             cbR964.DropDownStyle = ComboBoxStyle.DropDownList;
             cbR964.FormattingEnabled = true;
             cbR964.Items.AddRange(new object[] { "es compatible con mas kvm de ibm", "INTERNET 5G", "Más memoria y registros; mejor rendimiento", "Si usas python te dan cafe gratis al oxxo", "Windows 365 gratis" });
-            cbR964.Location = new Point(0, 124);
+            cbR964.Location = new Point(0, 126);
             cbR964.Name = "cbR964";
-            cbR964.Size = new Size(408, 40);
+            cbR964.Size = new Size(547, 40);
             cbR964.Sorted = true;
             cbR964.TabIndex = 2;
             cbR964.Tag = "Más memoria y registros; mejor rendimiento";
@@ -849,21 +835,11 @@
             lblR964.Text = "Capacidad masiva de memoria, más registros, mejor rendimiento en cálculos pesados y optimización en software moderno.";
             lblR964.Visible = false;
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(3, 65);
-            label3.Name = "label3";
-            label3.Size = new Size(398, 45);
-            label3.TabIndex = 3;
-            label3.Text = "REGISTROS PRINCIPALES";
-            // 
             // lblArquitectura64
             // 
             lblArquitectura64.AutoSize = true;
             lblArquitectura64.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblArquitectura64.Location = new Point(1053, 0);
+            lblArquitectura64.Location = new Point(1254, 0);
             lblArquitectura64.Name = "lblArquitectura64";
             lblArquitectura64.Size = new Size(385, 45);
             lblArquitectura64.TabIndex = 2;
@@ -873,7 +849,7 @@
             // 
             lblArquitectura32.AutoSize = true;
             lblArquitectura32.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblArquitectura32.Location = new Point(528, 0);
+            lblArquitectura32.Location = new Point(490, 0);
             lblArquitectura32.Name = "lblArquitectura32";
             lblArquitectura32.Size = new Size(385, 45);
             lblArquitectura32.TabIndex = 1;
@@ -893,7 +869,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(3, 216);
+            label4.Location = new Point(3, 231);
             label4.Name = "label4";
             label4.Size = new Size(410, 45);
             label4.TabIndex = 4;
@@ -903,7 +879,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(3, 387);
+            label5.Location = new Point(3, 403);
             label5.Name = "label5";
             label5.Size = new Size(372, 45);
             label5.TabIndex = 5;
@@ -913,7 +889,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(3, 556);
+            label6.Location = new Point(3, 575);
             label6.Name = "label6";
             label6.Size = new Size(270, 45);
             label6.TabIndex = 6;
@@ -923,7 +899,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(3, 735);
+            label7.Location = new Point(3, 747);
             label7.Name = "label7";
             label7.Size = new Size(305, 45);
             label7.TabIndex = 7;
@@ -933,7 +909,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(3, 895);
+            label8.Location = new Point(3, 919);
             label8.Name = "label8";
             label8.Size = new Size(433, 45);
             label8.TabIndex = 8;
@@ -943,7 +919,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(3, 1046);
+            label9.Location = new Point(3, 1091);
             label9.Name = "label9";
             label9.Size = new Size(479, 45);
             label9.TabIndex = 9;
@@ -953,7 +929,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(3, 1200);
+            label10.Location = new Point(3, 1263);
             label10.Name = "label10";
             label10.Size = new Size(375, 45);
             label10.TabIndex = 10;
@@ -963,7 +939,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(3, 1349);
+            label11.Location = new Point(3, 1435);
             label11.Name = "label11";
             label11.Size = new Size(178, 45);
             label11.TabIndex = 11;
@@ -973,7 +949,7 @@
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(3, 1519);
+            label12.Location = new Point(3, 1607);
             label12.Name = "label12";
             label12.Size = new Size(241, 45);
             label12.TabIndex = 12;
@@ -984,20 +960,19 @@
             panel1.Controls.Add(cbR864);
             panel1.Controls.Add(lblR864);
             panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(1053, 1203);
+            panel1.Location = new Point(1254, 1266);
             panel1.Name = "panel1";
-            panel1.Size = new Size(408, 143);
+            panel1.Size = new Size(760, 166);
             panel1.TabIndex = 33;
             // 
             // cbR864
             // 
-            cbR864.Dock = DockStyle.Bottom;
             cbR864.DropDownStyle = ComboBoxStyle.DropDownList;
             cbR864.FormattingEnabled = true;
             cbR864.Items.AddRange(new object[] { "ANDROID & IPHONE", "BIOS", "OSCAR IBM", "Silver y dinosaurios", "SQL SERVER + DOSDIRTY", "UEFI", "Windows 10/11 64, Linux 64, servidores/BD/virtualización", "WINDOWS SERVER 2012" });
-            cbR864.Location = new Point(0, 103);
+            cbR864.Location = new Point(0, 126);
             cbR864.Name = "cbR864";
-            cbR864.Size = new Size(408, 40);
+            cbR864.Size = new Size(547, 40);
             cbR864.Sorted = true;
             cbR864.TabIndex = 1;
             cbR864.Tag = "Windows 10/11 64, Linux 64, servidores/BD/virtualización";
@@ -1014,22 +989,34 @@
             lblR864.Text = "Sistemas modernos: Windows 10/11 64 bits, Linux 64 bits, servidores, bases de datos grandes, aplicaciones de IA y virtualización.";
             lblR864.Visible = false;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(3, 59);
+            label3.Name = "label3";
+            label3.Size = new Size(398, 45);
+            label3.TabIndex = 3;
+            label3.Text = "REGISTROS PRINCIPALES";
+            // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             pictureBox1.Image = Properties.Resources.Captura_de_pantalla_2025_09_07_224654;
-            pictureBox1.Location = new Point(1470, 0);
+            pictureBox1.Location = new Point(3, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(547, 1697);
+            pictureBox1.Size = new Size(542, 1697);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
             // btnSalir
             // 
+            btnSalir.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnSalir.BackColor = Color.Gray;
             btnSalir.FlatStyle = FlatStyle.Popup;
             btnSalir.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSalir.Location = new Point(1621, 1613);
+            btnSalir.Location = new Point(132, 1572);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(288, 80);
             btnSalir.TabIndex = 2;
@@ -1039,10 +1026,11 @@
             // 
             // btnComprobar
             // 
+            btnComprobar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnComprobar.BackColor = Color.Gray;
             btnComprobar.FlatStyle = FlatStyle.Popup;
             btnComprobar.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnComprobar.Location = new Point(1623, 1522);
+            btnComprobar.Location = new Point(132, 1436);
             btnComprobar.Name = "btnComprobar";
             btnComprobar.Size = new Size(288, 80);
             btnComprobar.TabIndex = 3;
@@ -1050,17 +1038,29 @@
             btnComprobar.UseVisualStyleBackColor = false;
             btnComprobar.Click += btnComprobar_Click;
             // 
+            // panelRight
+            // 
+            panelRight.Controls.Add(btnComprobar);
+            panelRight.Controls.Add(btnSalir);
+            panelRight.Controls.Add(pictureBox1);
+            panelRight.Dock = DockStyle.Right;
+            panelRight.Location = new Point(1472, 0);
+            panelRight.Name = "panelRight";
+            panelRight.Size = new Size(545, 1700);
+            panelRight.TabIndex = 4;
+            // 
             // frmJuego
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(2017, 1700);
-            Controls.Add(btnComprobar);
-            Controls.Add(btnSalir);
-            Controls.Add(pictureBox1);
+            Controls.Add(panelRight);
             Controls.Add(tableLayoutPanel1);
+            FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmJuego";
-            Text = "frmJuego";
+            Text = "CUADRO COMPARATIVO - ZDEV - UAS 2025 - JUEGO";
+            WindowState = FormWindowState.Maximized;
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             panel20.ResumeLayout(false);
@@ -1104,6 +1104,7 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panelRight.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -1186,5 +1187,6 @@
         private PictureBox pictureBox1;
         private Button btnSalir;
         private Button btnComprobar;
+        private Panel panelRight;
     }
 }

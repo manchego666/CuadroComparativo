@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPerdiste));
             pictureBox1 = new PictureBox();
             btnSalir = new Button();
             btnReintentar = new Button();
@@ -37,6 +38,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.Image = Properties.Resources.ChatGPT_Image_7_sept_2025__11_32_23_p_m_;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
@@ -47,6 +49,7 @@
             // 
             // btnSalir
             // 
+            btnSalir.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnSalir.FlatStyle = FlatStyle.Popup;
             btnSalir.Font = new Font("Segoe UI", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSalir.Location = new Point(81, 1494);
@@ -59,6 +62,7 @@
             // 
             // btnReintentar
             // 
+            btnReintentar.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnReintentar.FlatStyle = FlatStyle.Popup;
             btnReintentar.Font = new Font("Segoe UI", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnReintentar.Location = new Point(685, 1494);
@@ -71,6 +75,7 @@
             // 
             // lblAciertos
             // 
+            lblAciertos.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             lblAciertos.AutoSize = true;
             lblAciertos.BackColor = Color.Transparent;
             lblAciertos.Font = new Font("Segoe UI", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -89,8 +94,11 @@
             Controls.Add(btnReintentar);
             Controls.Add(btnSalir);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmPerdiste";
-            Text = "frmPerdiste";
+            Text = "CUADRO COMPARATIVO - ZDEV - UAS 2025 - PERDISTE";
+            WindowState = FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
