@@ -1,7 +1,7 @@
 # 🎮 Cuadro Comparativo Interactivo – Lenguaje Ensamblador
 
 ![UAS Logo]
-![UAS](uas.png)
+![UAS](Imagenes/uas.png)
 
 ---
 
@@ -58,14 +58,14 @@ El cuadro comparativo incluye:
 
 ## 📸 Capturas de pantalla
 ### Menú de inicio
-![Menú de inicio](inicio.png)
+![Menú de inicio](Imagenes/inicio.png)
 
 ### Juego activo
-![Juego activo](juego.png)
+![Juego activo](Imagenes/juego.png)
 
 ### Pantalla Ganaste / Perdiste
-![Ganaste](ganaste.png)
-![Perdiste](perdiste.png)
+![Ganaste](Imagenes/ganaste.png)
+![Perdiste](Imagenes/perdiste.png)
 
 ---
 
